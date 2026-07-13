@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - Owl's Nest Cafe</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <style>
+        body{
+            background:#111111;
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background:white;
+            border-bottom:1px solid #ddd;
+        }
+
+        .logo{
+            width:50px;
+            height:50px;
+            object-fit:contain;
+        }
+
+        .navbar{
+            border-bottom:1px solid #ddd;
+        }
+
+        .navbar-brand{
+            font-size:1.2rem;
+            font-weight:bold;
+        }
+
+        .navbar-nav .nav-link{
+            color:#000 !important;
+            margin-left:10px;
+            transition:.3s;
+        }
+
+        .navbar-nav .nav-link:hover{
+            transform:scale(1.1);
+            font-weight:bold;
+        }
+
+        .about-card{
+
+            background:#1b1b1b;
+            border:1px solid #444;
+            padding:35px;
+            text-align:center;
+            height:100%;
+            transition:.3s;
+
+        }
+
+        .about-card:hover{
+
+            transform:translateY(-8px);
+
+        }
+
+        .card-icon{
+
+            font-size:60px;
+            margin-bottom:20px;
+
+        }
+
+        footer{
+
+            background:#0b0b0b;
+            border-top:1px solid #444;
+            text-align:center;
+            padding:20px;
+            margin-top:60px;
+            color:#888;
+
+        }
+
+    </style>
+</head>
+  
+<body>
+<header>
+    <div class="container text-center py-3">
+        <a href="home.html">
+            <img src="logo.jpg" alt="Logo" class="logo">
+        </a>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-white navbar-light">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="home.html">
+            Owl's Nest Cafe
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">
+                        HOME
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" href="about.html">
+                        ABOUT
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">
+                        PRODUCTS
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        CONTACT
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+            <div class="about-card">
+                <div class="card-icon">
+                    📜
+                </div>
+
+                <h2 class="mb-3">
+                    Vision
+                </h2>
+              
+                <p class="text-secondary">
+                    Every person can live their life how they want.
+                    If people choose to be nocturnal and spend
+                    their time late at night, we are here to
+                    provide a haven that accommodates their
+                    caffeine needs.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="about-card">
+                <div class="card-icon">
+                    🦉
+                </div>
+                <h2 class="mb-3">
+                    Tagline
+                </h2>
+                <p class="text-secondary">
+                    "Here at the Nest,
+                    All Night Owls are welcome."
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="about-card">
+                <div class="card-icon">
+                    🌙
+                </div>
+                <h2 class="mb-3">
+                    Mission
+                </h2>
+                <p class="text-secondary">
+                    To provide a space for night owls as we bridge
+                    toward social norms through comforting hospitality,
+                    premium coffee, and a welcoming environment that
+                    powers both focused work and late-night unwinding.
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+  
+<footer>
+    <div class="container">
+
+        <p class="mb-0">
+            © 2026 Owl's Nest Cafe
+        </p>
+
+    </div>
+</footer>
+
+<script src="bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
