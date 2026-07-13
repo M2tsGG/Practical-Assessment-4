@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - Owl's Nest Cafe</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:#111111;
+            color:white;
+            font-family:Arial, sans-serif;
+        }
+
+        header{
+            background:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        .logo img{
+            height:50px;
+        }
+        
+        .navbar{
+            border-bottom:1px solid #ddd;
+        }
+
+        .navbar-brand{
+            font-size:1.2rem;
+            font-weight:bold;
+        }
+
+        nav{
+            border-top:1px solid #ddd;
+            border-bottom:1px solid #ddd;
+        }
+
+        .navbar-nav .nav-link{
+            transition: transform .3s ease, color .3s ease;
+        }
+
+        .navbar-nav .nav-link:hover{
+            transform:scale(1.15);
+            font-weight:bold;
+            color:#000 !important;
+        }
+
+        .intro{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .intro p{
+            color:#aaaaaa;
+        }
+
+        .card{
+            background:#161616;
+            border:1px solid #2d2d2d;
+            color:white;
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card img{
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-text{
+            color:#aaaaaa;
+        }
+
+        .btn-dark{
+            background:white;
+            color:black;
+            border:none;
+            font-weight:bold;
+        }
+
+        .btn-dark:hover{
+            background:#dddddd;
+            color:black;
+        }
+
+        footer{
+            background:#0a0a0a;
+            border-top:1px solid #2d2d2d;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+            color:#777;
+        }
+
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <a href="home.html">
+            <img src="logo.jpg" alt="Logo">
+        </a>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-white">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            Owl's Nest Cafe
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="home.html">
+                        HOME
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="about.html">
+                        ABOUT
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active text-dark fw-bold" href="products.html">
+                        PRODUCTS
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="contacts.html">
+                        CONTACT
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <div class="intro">
+        <h2>Our Premium Coffee Blends</h2>
+
+        <p>
+            All our beans are ethically sourced
+            and freshly ground to keep you moving through the darkest hours.
+        </p>
+    </div>
+  
+    <div class="row g-4">
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="card h-100">
+                <img src="espresso.png" class="card-img-top" alt="Coffee">
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Midnight Roast Espresso
+                    </h5>
+
+                    <p class="card-text">
+                        Heavy-bodied dark roast with rich chocolate
+                        and brown sugar notes.
+                    </p>
+
+                    <a href="#" class="btn btn-dark">
+                        ADD TO CART
+                    </a>
+                  
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="card h-100">
+                <img src="cold-brew.jpg" class="card-img-top" alt="Coffee">
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Lucid Dream Cold Brew
+                    </h5>
+
+                    <p class="card-text">
+                        Smooth cold brew steeped for 18 hours,
+                        naturally sweet and refreshing.
+                    </p>
+
+                    <a href="#" class="btn btn-dark">
+                        ADD TO CART
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-12">
+            <div class="card h-100">
+                <img src="foam-coffee.jpg" class="card-img-top" alt="Coffee">
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Twilight Espresso
+                    </h5>
+
+                    <p class="card-text">
+                        Rich espresso with a velvety crema and
+                        smooth cocoa undertones.
+                    </p>
+
+                    <a href="#" class="btn btn-dark">
+                        ADD TO CART
+                    </a>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Owl's Nest Cafe</p>
+</footer>
+
+<script src="bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
