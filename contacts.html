@@ -8,10 +8,105 @@
     <title>Contact Us - Owl's Nest Cafe</title>
 
     <link rel="stylesheet" href="bootstrap.css">
-  
+
+    <style>
+        body{
+            background:#111111;
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background:white;
+            border-bottom:1px solid #ddd;
+        }
+
+        .logo{
+        width:55px;
+        height:55px;
+        object-fit:contain;
+        }
+
+        .navbar{
+            border-bottom:1px solid #ddd;
+        }
+
+        .navbar-brand{
+            font-size:1.2rem;
+            font-weight:bold;
+        }
+
+        .navbar-nav .nav-link{
+            color:#000 !important;
+            transition:.3s;
+            margin-left:10px;
+        }
+
+        .navbar-nav .nav-link:hover{
+            transform:scale(1.1);
+            font-weight:bold;
+        }
+
+        .panel{
+            background:#1b1b1b;
+            border:1px solid #444;
+            padding:35px;
+            height:100%;
+        }
+
+        .form-control,
+        .form-control:focus{
+
+            background:#111;
+            color:white;
+            border:1px solid #555;
+            box-shadow:none;
+
+        }
+
+        textarea{
+            resize:none;
+        }
+
+        .btn-send{
+            background:white;
+            color:black;
+            font-weight:bold;
+        }
+
+        .btn-send:hover{
+            background:#ddd;
+            color:black;
+        }
+
+        .info-block{
+            margin-bottom:25px;
+        }
+
+        footer{
+
+            background:#0b0b0b;
+            border-top:1px solid #444;
+            text-align:center;
+            padding:20px;
+            margin-top:60px;
+            color:#888;
+
+        }
+    </style>
+    
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<header>
+    <div class="container text-center py-3">
+        <a href="home.html">
+            <img src="logo.jpg" alt="Logo" class="logo img-fluid">
+        </a>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-white navbar-light">
     <div class="container">
         <a class="navbar-brand fw-bold" href="home.html">
             Owl's Nest Cafe
@@ -29,107 +124,148 @@
             <ul class="navbar-nav ms-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
+                    <a class="nav-link" href="home.html">
+                        HOME
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about.html">
+                        ABOUT
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="products.html">Products</a>
+                    <a class="nav-link" href="products.html">
+                        PRODUCTS
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="contacts.html">Contact</a>
+                    <a class="nav-link active fw-bold" href="contacts.html">
+                        CONTACT
+                    </a>
                 </li>
-
             </ul>
         </div>
     </div>
 </nav>
 
 <main class="container py-5">
-    <h1 class="text-center mb-5">
-        Contact Us
-    </h1>
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="panel">
 
-    <div class="row">
-        <div class="col-lg-6 mb-4">
+                <h2 class="mb-3">
+                    Send a Message
+                </h2>
 
-            <h3>Send a Message</h3>
-            <form>
+                <p class="text-secondary">
+                    Have a question about our roasts,
+                    event bookings, or just want to say hi?
+                    Contact us below.
+                </p>
 
-                <div class="mb-3">
-                    <label class="form-label">
-                        Email Address
-                    </label>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Email Address
+                        </label>
 
-                    <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Enter your email">
-                </div>
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Enter your email">
+                    </div>
 
-                <div class="mb-3">
-                    <label class="form-label">
-                        Your Message
-                    </label>
+                    <div class="mb-3">
+                        <label class="form-label">
+                            Your Message
+                        </label>
 
-                    <textarea
-                        class="form-control"
-                        rows="5"
-                        placeholder="Type your message"></textarea>
-
-                </div>
-                <button class="btn btn-primary">
-                    Send Message
-                </button>
-            </form>
+                        <textarea
+                            class="form-control"
+                            rows="6"
+                            placeholder="What's on your mind?"></textarea>
+                    </div>
+                    <button class="btn btn-send px-4">
+                        Send Message
+                    </button>
+                </form>
+            </div>
         </div>
 
         <div class="col-lg-6">
-            <h3>Contact Information</h3>
+            <div class="panel">
+                <h2 class="mb-4">
+                    Location and Contacts
+                </h2>
+                <div class="info-block">
+                    <h4>📍 Address</h4>
 
-            <p>
-                <strong>Address:</strong><br>
-                123 Avenue, District,<br>
-                Metro Manila, Philippines
-            </p>
+                    <p class="text-secondary">
+                        123 Avenue, District,<br>
+                        Metro Manila, Philippines
+                    </p>
+                </div>
 
-            <p>
-                <strong>Email:</strong><br>
-                businessowlsnest@gmail.com
-            </p>
+                <div class="info-block">
+                    <h4>📧 Email</h4>
 
-            <p>
-                <strong>Phone:</strong><br>
-                +63 912 123 4567
-            </p>
+                    <p class="text-secondary">
+                        businessowlsnest@gmail.com
+                    </p>
+                </div>
 
-            <p>
-                <strong>Facebook:</strong><br>
-                @OwlsNestCafe
-            </p>
+                <div class="info-block">
+                    <h4>📞 Phone</h4>
 
-            <p>
-                <strong>Instagram:</strong><br>
-                @owls.nest
-            </p>
+                    <p class="text-secondary">
+                        +63 912 123 4567
+                    </p>
+                </div>
 
-            <p>
-                <strong>Store Hours:</strong><br>
-                Monday – Friday: 4:00 PM – 4:00 AM<br>
-                Saturday – Sunday: 5:00 PM – 5:00 AM
-            </p>
+                <div class="info-block">
+                    <h4>📱 Social Media</h4>
+
+                    <p class="text-secondary mb-1">
+                        <strong>Facebook:</strong> @OwlsNestCafe
+                    </p>
+
+                    <p class="text-secondary">
+                        <strong>Instagram:</strong> @owls.nest
+                    </p>
+                </div>
+                
+                <div class="info-block">
+                    <h4>🕒 Store Hours</h4>
+
+                    <ul class="list-unstyled text-secondary">
+
+                        <li>
+                            <strong>Monday - Friday:</strong>
+                            4:00 PM – 4:00 AM
+                        </li>
+
+                        <li>
+                            <strong>Saturday - Sunday:</strong>
+                            5:00 PM – 5:00 AM
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </main>
 
-<footer class="bg-light text-center p-3">
-    <p class="mb-0">
-        © 2026 Owl's Nest Cafe
-    </p>
+<footer>
+    <div class="container">
+        <p class="mb-0">
+            © 2026 Owl's Nest Cafe
+        </p>
+
+    </div>
 </footer>
 
 <script src="bootstrap.bundle.min.js"></script>
